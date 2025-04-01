@@ -1,0 +1,12 @@
+@import"../globals.scss";
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.25em;
+}
+
+.backArrow{
+    justify-self: flex-end;
+}
