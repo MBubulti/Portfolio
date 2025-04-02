@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
+const NextConfig = {
+  output: 'export',
+  basePath: "/portfolio", // Remplace "portfolio" par le nom de ton repo GitHub
+  assetPrefix: "/portfolio/",
 };
 
-export default nextConfig;
+export default NextConfig;
