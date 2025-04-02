@@ -1,9 +1,10 @@
-import type { NextConfig } from "next";
+import path from 'path';
+import { NextConfig } from 'next';
 
-const NextConfig = {
-  output: "export",
-  basePath: "/portfolio", // Remplace "portfolio" par le nom de ton repo GitHub
-  assetPrefix: "/portfolio/",
+const nextConfig: NextConfig = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'src', 'styles')],
+  },
 };
 
-export default NextConfig;
+export default nextConfig;
