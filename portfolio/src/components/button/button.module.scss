@@ -1,0 +1,59 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 0.75em 1.5em;
+    font-size: 1rem;
+  
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+  
+    &:active {
+      transform: translateY(0);
+      box-shadow: none;
+    }
+  }
+
+  .primary {
+    background-color: $main-color;
+    color: white;
+  
+    &:hover {
+      background-color: color.scale($main-color,$lightness: 10%);
+    }
+  }
+
+  .secondary {
+    background-color: $secondary-color;
+    color: white;
+  
+    &:hover {
+      background-color: color.scale($secondary-color,$lightness: 10%);
+    }
+  }
+
+  .small {
+    font-size: 0.85rem;
+    padding: 0.5em 1em;
+  }
+  
+  .medium {
+    font-size: 1rem;
+    padding: 0.75em 1.5em;
+  }
+  
+  .large {
+    font-size: 1.25rem;
+    padding: 1em 2em;
+  }
+
+  .active{
+    background-color: color.scale($main-color,$lightness: 10%);
+  }

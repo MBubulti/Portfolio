@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "../styles/globals.scss";
 import { Hedvig_Letters_Sans, Hedvig_Letters_Serif } from "next/font/google";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import Header from "@/components/header/header";
+import Footer from "@/components/footer/footer";
 
 const hedvigSerif = Hedvig_Letters_Serif({
   subsets: ["latin"],
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${hedvigSerif.className} ${hedvigSans.className}`}>
+      <body className={`${hedvigSerif.className} ${hedvigSans.className} body`}>
       <Header/>
       {children}
       <Footer/>

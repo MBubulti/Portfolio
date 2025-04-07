@@ -1,0 +1,11 @@
+@use 'variables' as *;
+
+.title{
+    background-color: $main-color;
+    
+    &__dropmenu{
+        background-color: $secondary-color;
+        color: white;
+        padding: 0.1em 0 0.1em 1em;
+    }
+}
