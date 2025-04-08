@@ -31,3 +31,19 @@
 a{
   color: inherit;
 }
+
+.lucide-chevron-down{
+  background-color: $main-color;
+}
+
+.chevron{
+  margin: 0.3em;
+  rotate: 0deg;
+  transition: transform 600ms;
+  &__up{
+      transform: rotate(180deg);
+  }
+  &__down{
+      transform: rotate(0deg);
+  }
+}

@@ -2,10 +2,25 @@
 
 .title{
     background-color: $main-color;
+
     
-    &__dropmenu{
+    &__droplist{
         background-color: $secondary-color;
         color: white;
         padding: 0.1em 0 0.1em 1em;
     }
 }
+
+.band{
+    background-color: $main-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.1em;
+}
+
+.skillsBand{
+    width: 150%;
+}
+
+
