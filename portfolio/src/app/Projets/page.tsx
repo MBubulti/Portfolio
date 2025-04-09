@@ -1,4 +1,4 @@
-import styles from '@/styles/projets.module.scss';
+//import styles from '@/styles/projets.module.scss';
 import Projet from '@/components/projet/projet';
 
 const projetsDisplay = [
