@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 .footerLinks{
     display: flex;
     flex-direction: row;
@@ -13,12 +15,18 @@
     &__links{
         display: flex;
         gap: 0.5em;
+
+        a{
+            &:hover{
+                color: color.scale(black, $lightness: 50%);
+            }
+        }
     }
 }
 
 .topArrow{
     position:relative;
-    right: -7rem;
+    right: -4rem;
     cursor: pointer;
     z-index: 10;
 }

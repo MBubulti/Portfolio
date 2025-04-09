@@ -10,7 +10,7 @@ type bandProps = {
 export default function Band({title, collapse, alterner}: bandProps){
     return (
         <div className={styles.band}>
-            <h3 className={styles.band} onClick={alterner}>{title}</h3>
+            <h2 className={styles.band} onClick={alterner}>{title}</h2>
             <ChevronDown onClick={alterner} className={`chevron ${collapse ? 'chevron__up' : 'chevron__down'}`}/>
         </div>
     )

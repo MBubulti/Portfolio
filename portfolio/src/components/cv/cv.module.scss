@@ -4,8 +4,15 @@
 .cv{
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 0.75em;
     align-items: center;
+
+  &__text{
+    font-size: 14px;
+    @include respond('desktop') {
+      font-size: 28px;
+  }
+  }
 
  &__icon{
     border: none;
@@ -19,6 +26,11 @@
     &:hover {
         background-color: color.scale($main-color,$lightness: 10%);
       }
+
+      @include respond('desktop') {
+        width: 36px;
+      height: 36px;
+    }
  }
 
 }

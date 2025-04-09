@@ -21,7 +21,7 @@ const CV = () => {
 
 return (
     <article className={styles.cv}>
-        <p>Vous pouvez retrouver ici mon CV</p>
+        <p className={styles.cv__text}>Vous pouvez retrouver ici mon CV</p>
         <Eye className={styles.cv__icon} onClick={handlePreview}/>
         <Download className={styles.cv__icon}  onClick={handleDL}/> 
     </article>

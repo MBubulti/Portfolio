@@ -2,25 +2,39 @@
 
 .title{
     background-color: $main-color;
-
     
     &__droplist{
         background-color: $secondary-color;
         color: white;
         padding: 0.1em 0 0.1em 1em;
+
+        @include respond('desktop') {
+            font-size: 18px;
+        }
     }
 }
 
 .band{
     background-color: $main-color;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    @include respond('desktop') {
+        font-size: 28px;
+    }
 }
 
 .skillsBand{
-    width: 150%;
+    width: 100%;
+
+    @include respond('desktop') {
+        width: 200%;
+    }
 }
 
 

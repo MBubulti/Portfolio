@@ -1,4 +1,3 @@
-@use 'variables' as *;
 
 .display{
     display: flex;
@@ -6,26 +5,6 @@
     justify-content: center;
     align-items: center;
     gap: 2em;
-
-    &__intro{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:space-evenly;
-        gap:0.5em;
-    
-        &__img{
-            width: 20em;
-            height: 20em;
-            border-radius: 200px;
-        }
-    
-        &__text{
-            text-align:justify;
-            font-size: 14px;
-            line-height: 135%;
-        }
-    }
 
     &__skills{
         display: flex;
