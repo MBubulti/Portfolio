@@ -1,10 +1,11 @@
 //import styles from '@/styles/contact.module.scss';
+import Form from "@/components/form/form"
 
 export default function Contact(){
 
     return(
         <div>
-            <h2>Si vous voulez me contacter</h2>
+            <Form/>
         </div>
     )
 }

@@ -11,15 +11,12 @@ export default function Footer(){
     return(
         <footer>
             <section className={styles.footerLinks}>
-            <article className={styles.boxExternalLinks}>
-                <p>Pour me suivre</p>
-                <div className={styles.boxExternalLinks__links}>
-                    <Link href={`https://www.linkedin.com/in/maximebuffet10/`} target="_blank">LinkedIn</Link>
-                    <Link href={`https://github.com/MBubulti`} target="_blank">GitHub</Link>
-                </div>
-            </article>
-            <CircleArrowUp className={styles.topArrow} onClick={ScrollToTop}/>
+                    <article className={styles.boxExternalLinks__links}>
+                        <Link href={`https://www.linkedin.com/in/maximebuffet10/`} target="_blank">LinkedIn</Link>
+                        <Link href={`https://github.com/MBubulti`} target="_blank">GitHub</Link>
+                    </article>
             </section>
+            <CircleArrowUp className={styles.topArrow} onClick={ScrollToTop}/>
             <p>© Copyright 2025 - Maxime BUFFET</p>
         </footer>
     )

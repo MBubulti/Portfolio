@@ -1,0 +1,39 @@
+@use 'variables' as *;
+@use 'sass:color';
+
+.textProjet {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  h2 {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: $main-color;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+
+  &__link {
+    color: $main-color;
+    font-size: 1.25em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: color.scale($main-color, $lightness: 20%);
+    }
+  }
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

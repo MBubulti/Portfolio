@@ -1,36 +1,46 @@
 @use 'variables' as *;
 @use 'sass:color';
 
-.cv{
-    display: flex;
-    flex-direction: row;
-    gap: 0.75em;
-    align-items: center;
+.cv {
+  display: flex;
+  flex-direction: column; // mobile first
+  align-items: center;
+  gap: 0.5em;
 
-  &__text{
+  @include respond('tablet') {
+    flex-direction: row; // tablette et +
+    gap: 0.75em;
+    justify-content: center;
+  }
+
+  &__text {
     font-size: 14px;
+    font-weight: 500;
+    color: $secondary-color;
+
     @include respond('desktop') {
       font-size: 28px;
-  }
+    }
   }
 
- &__icon{
+  &__icon {
     border: none;
     border-radius: 8px;
-    padding: 0.2rem;
+    padding: 0.4rem;
     width: 28px;
     height: 28px;
     background-color: $main-color;
     color: white;
-    
-    &:hover {
-        background-color: color.scale($main-color,$lightness: 10%);
-      }
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 
-      @include respond('desktop') {
-        width: 36px;
+    &:hover {
+      background-color: color.scale($main-color, $lightness: 10%);
+    }
+
+    @include respond('desktop') {
+      width: 36px;
       height: 36px;
     }
- }
-
+  }
 }

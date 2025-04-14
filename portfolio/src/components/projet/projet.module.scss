@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding: 1.5em;
+  margin-bottom: 2em;
+
+  @include respond('tablet') {
+    flex-direction: row;
+    gap: 2em;
+  }
+
+  @include respond('desktop') {
+    gap: 3em;
+  }
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+  flex-grow: 1;
+}

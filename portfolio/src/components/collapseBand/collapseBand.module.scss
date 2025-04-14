@@ -1,40 +1,65 @@
 @use 'variables' as *;
+@use 'sass:color';
 
-.title{
-    background-color: $main-color;
-    
-    &__droplist{
-        background-color: $secondary-color;
-        color: white;
-        padding: 0.1em 0 0.1em 1em;
+.title {
+  background-color: $main-color;
 
-        @include respond('desktop') {
-            font-size: 18px;
-        }
+  &__droplist {
+    background-color: $secondary-color;
+    color: white;
+    padding: 0.6em 1em;
+    font-size: 14px;
+    border-bottom: 1px solid color.scale($secondary-color, $lightness: 15%);
+    transition: background-color 0.2s ease;
+
+    &:hover {
+      background-color: color.scale($secondary-color, $lightness: 15%);
     }
+
+    @include respond('desktop') {
+      font-size: 16px;
+    }
+  }
+
+  &__dropmenu {
+    background-color: $secondary-color;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+  }
 }
 
-.band{
-    background-color: $main-color;
+.band {
+  background-color: $main-color;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 0.75em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+
+  h2 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  @include respond('desktop') {
     font-size: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0.1em;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
 
-    @include respond('desktop') {
-        font-size: 28px;
+    h2 {
+      font-size: 1.25em;
     }
+  }
 }
 
-.skillsBand{
-    width: 100%;
+.skillsBand {
+  width: 100%;
 
-    @include respond('desktop') {
-        width: 200%;
-    }
+  @include respond('desktop') {
+    width: 200%;
+  }
 }
-
-

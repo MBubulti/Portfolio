@@ -1,32 +1,44 @@
 @use 'sass:color';
+@use 'variables' as *;
 
-.footerLinks{
-    display: flex;
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  @include respond('tablet') {
     flex-direction: row;
-    align-items: center;
-    gap: 1em;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+  }
 }
 
-.boxExternalLinks{
+.boxExternalLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    gap: 0.5em;
 
-    &__links{
-        display: flex;
-        gap: 0.5em;
-
-        a{
-            &:hover{
-                color: color.scale(black, $lightness: 50%);
-            }
-        }
+    a {
+      &:hover {
+        color: color.scale(black, $lightness: 50%);
+      }
     }
+  }
 }
 
-.topArrow{
-    position:relative;
-    right: -4rem;
+.topArrow {
+    margin-left: auto;
     cursor: pointer;
     z-index: 10;
-}
+    color: black;
+  
+    @include respond('tablet') {
+      margin-top: 0;
+    }
+  }

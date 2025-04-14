@@ -1,23 +1,43 @@
+@use 'variables' as *;
 
-.display{
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+
+  &__skills {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2em;
+    gap: 1.5em;
 
-    &__skills{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
+    @include respond('tablet') {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2em;
     }
 
-    &__cv{
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-        align-items: center;
+    @include respond('desktop') {
+      gap: 3em;
+    }
+  }
+
+  &__cv {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+    @include respond('tablet') {
+      flex-direction: row;
+      justify-content: center;
     }
 
+    @include respond('desktop') {
+      gap: 2em;
+    }
+  }
 }

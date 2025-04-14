@@ -1,0 +1,18 @@
+@use 'variables' as *;
+
+.projets {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  margin-top: 2em;
+  padding-inline: 2em;
+  width: 100%;
+
+  @include respond('tablet') {
+    padding-inline: 4em;
+  }
+
+  @include respond('desktop') {
+    padding-inline: 6em;
+  }
+}
