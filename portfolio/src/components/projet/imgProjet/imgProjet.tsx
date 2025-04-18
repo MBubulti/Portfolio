@@ -9,6 +9,6 @@ type ImgProps = {
 export default function ImgProjet({src, alt}: ImgProps){
 
     return (
-        <Image className={styles.ImgProjet} priority={true} src={src} alt={alt} width={300} height={250}/>
+        <Image className={styles.ImgProjet} priority={true} src={src} alt={alt} width={500} height={450}/>
     )
 }
