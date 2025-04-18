@@ -1,0 +1,16 @@
+[
+    {
+      "repository": "https://github.com/MBubulti/Projet-5-Kasa",
+      "img": "/kasa_demo.PNG",
+      "title": "Projet Kasa",
+      "text": "d’une application web de location immobilière",
+      "technologies": ["React", "Vite"]
+    },
+    {
+      "repository": "https://github.com/MBubulti/Projet-6-Grimoire",
+      "img": "/booki_demo.PNG",
+      "title": "Projet Booki",
+      "text": "du Backend d’un site de notation de livre",
+      "technologies": ["MongoDB", "NodeJS"]
+    }
+  ]

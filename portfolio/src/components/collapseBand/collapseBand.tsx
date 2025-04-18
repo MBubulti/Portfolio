@@ -14,11 +14,9 @@ const generateLi = (items: string[]) => {
 };
 
 export default function CollapseBand({title, list}: collapseProps){
-    const [collapse, setCollapse] = useState(false);
-    //const [collapseDrop, isDroped] = useState(true);
+    const [collapse, setCollapse] = useState(true);
     const toggleCollapse = () => {
         setCollapse(!collapse);
-        //isDroped(false);
     };
 
     return (
